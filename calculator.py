@@ -3,5 +3,10 @@ print("Simple Calculator")
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 
-result = num1 + num2
-print("Results: ", result)
+operation = input("Choose the operation (+ or -): ")
+if operation == "+":
+   print("Result: ", num1 + num2)
+elif operation == "-":
+   print("Result: ", num1 - num2)
+else:
+   print("Invalid operation")
